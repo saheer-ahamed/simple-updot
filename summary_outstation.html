@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="css/product-summary.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="body-container">
+        <section class="main">
+            <div class="main-wrapper">
+                <div class="mt-5 mb-5">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid ps-4 pe-4 nav-container">
+                            <div class="d-flex align-items-center">
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="public/images/svg/logo.svg" class="image-fluid" alt="logo">
+                                </a>
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="public/images/svg/location-icon.svg" alt="">
+                                        Bangalore
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span><img src="public/images/svg/navbar-toggle-icon.svg" alt=""></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#">Fleet</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#" tabindex="-1">
+                                            Blogs
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#" tabindex="-1"
+                                            aria-disabled="true">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" tabindex="-1" class="btn-continue pe-3 ps-3 nav-link"
+                                            role="button">Login/Signup</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <section class="row">
+                    <div class="summary col-12 col-lg-8">
+                        <div class="product-info mb-4">
+                            <h1>Summary</h1>
+                            <p class="small-info mt-0 text-dark">Your booking details</p>
+                            <div class="product-n-details d-flex">
+                                <img src="./public/images/svg/RangeRover.svg" class="image-fluid col-sm-6 col-5"
+                                    alt="Range Rover Vogue">
+                                <div class="product-data col-sm-6 col-xs-12">
+                                    <h3>Range Rover Vouge</h3>
+                                    <h5>29 Jun 2023 <span class="small-info text-dark">2:30 PM</span>
+                                        <div class="dot"></div>31 Jun 2023 <span class="small-info text-dark">4:30
+                                            PM</span>
+                                    </h5>
+                                    <h6 class="fw-bold">Out Station - 300 KM, 12AM - 8PM</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buyer-info">
+                            <h4 class="mb-4">Personal Information</h4>
+                            <form>
+                                <div class="row">
+                                    <div class="mb-3 col-sm-6 col-xs-12">
+                                        <div class="input_form">
+                                            <input type="text" class="form-control" placeholder="Full Name">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 col-sm-6 col-xs-12">
+                                        <div class="input_form">
+                                            <input type="number" class="form-control" placeholder="Mobile Number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-12">
+                                        <div class="input_form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-12">
+                                        <div class="input_form">
+                                            <input type="text" class="form-control" placeholder="Pickup Address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-12">
+                                        <div class="input_form">
+                                            <input type="text" class="form-control"
+                                                placeholder="Drop Off Address (Optional)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <ul class="ms-4 mt-4 text-muted">
+                            <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                                interdum, ac aliquet odio mattis.</li>
+                            <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                                interdum</li>
+                        </ul>
+                    </div>
+                    <div class="price-breakup col-12 col-lg-4">
+                        <div class="price-list-wrapper">
+                            <div class="price-list-heading mb-4">
+                                <h3>Price Breakup</h3>
+                                <p>Chauffeur Driven</p>
+                            </div>
+
+                            <table id="price-table">
+                                <tr>
+                                    <td>Base Price</td>
+                                    <td>₹76,680</td>
+                                </tr>
+                                <tr>
+                                    <td>Driver Batta</td>
+                                    <td>₹4,630</td>
+                                </tr>
+                                <tr>
+                                    <td>Extra Km</td>
+                                    <td>₹830 <span>@83/Km</span></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="extended-row">
+                                    <td colspan="3">
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>₹81,332</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="price-actions">
+                            <div class="input_form mt-3" style="align-items: center;">
+                                <input type="checkbox" name="agree_terms" id="terms_condition">
+                                <label for="terms_condition" class="additional-info mt-0">* I agree to the terms and
+                                    conditions.</label>
+                            </div>
+                            <button class="btn-continue mt-4">Proceed to Payment</button>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-wrapper" style="border: 0;">
+                <div class="footer-logo-div">
+                    <img src="public/images/svg/logo.svg" alt="">
+                    <h5>We have strategically placed our rental locations in key areas to ensure your convenience.
+                        Whether you're arriving at the airport.</h5>
+                </div>
+                <div class="footer-menu-list">
+                    <h5>Explore</h5>
+                    <ul>
+                        <li>Fleets</li>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Contact us</li>
+                        <li>Policy</li>
+                        <li>Terms</li>
+                    </ul>
+                </div>
+                <div class="footer-company-info">
+                    <p class="available-time">Daily from 9:00AM - 8:00PM</p>
+                    <h4 class="toll-no">+91 1800 203 4056</h4>
+                    <p class="email">yourmail@example.com</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <img src="public/images/svg/instagram-icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="public/images/svg/twitter-icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="public/images/svg/linkedin-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+</html>

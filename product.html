@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="css/product-summary.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="body-container">
+        <section class="main">
+            <div class="main-wrapper">
+                <div class="mt-5 mb-5">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid ps-4 pe-4 nav-container">
+                            <div class="d-flex align-items-center navbar-brand-items">
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="public/images/svg/logo.svg" class="image-fluid" alt="logo">
+                                </a>
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="public/images/svg/location-icon.svg" alt="">
+                                        Bangalore
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span><img src="public/images/svg/navbar-toggle-icon.svg" alt=""></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#">Fleet</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#" tabindex="-1">
+                                            Blogs
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#" tabindex="-1"
+                                            aria-disabled="true">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" tabindex="-1" class="btn-continue pe-3 ps-3 nav-link"
+                                            role="button">Login/Signup</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#standardModal"
+                data-bs-whatever="@mdo">Open modal for standard</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#outStationModal"
+                data-bs-whatever="@mdo">Open modal for OutStation</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#airportModal"
+                data-bs-whatever="@mdo">Open modal for Airport</button>
+        </section>
+
+        <!-- Product Features -->
+        <section class="features">
+            <div class="cards-wrapper">
+                <div class="features-card">
+                    <div class="icon-wrapper">
+                        <img src="public/images/svg/airCondition-icon.svg" alt="">
+                    </div>
+                    <div class="feature-details">
+                        <h3>Air Condition</h3>
+                        <p>Choose from our wide range of premium cars, select the pickup and return dates.</p>
+                    </div>
+                </div>
+                <div class="features-card">
+                    <div class="icon-wrapper">
+                        <img src="public/images/svg/airBags-icon.svg" alt="">
+                    </div>
+                    <div class="feature-details">
+                        <h3>Airbags</h3>
+                        <p>Choose from our wide range of premium cars, select the pickup and return dates.</p>
+                    </div>
+                </div>
+                <div class="features-card">
+                    <div class="icon-wrapper">
+                        <img src="public/images/svg/gps-icon.svg" alt="">
+                    </div>
+                    <div class="feature-details">
+                        <h3>GPS Tracker</h3>
+                        <p>Choose from our wide range of premium cars, select the pickup and return dates.</p>
+                    </div>
+                </div>
+                <div class="features-card">
+                    <div class="icon-wrapper">
+                        <img src="public/images/svg/bluetooth-icon.svg" alt="">
+                    </div>
+                    <div class="feature-details">
+                        <h3>Bluetooth</h3>
+                        <p>Choose from our wide range of premium cars, select the pickup and return dates.</p>
+                    </div>
+                </div>
+                <div class="features-card">
+                    <div class="icon-wrapper">
+                        <img src="public/images/svg/parking-assistant-icon.svg" alt="">
+                    </div>
+                    <div class="feature-details">
+                        <h3>Parking Assistant</h3>
+                        <p>Choose from our wide range of premium cars, select the pickup and return dates.</p>
+                    </div>
+                </div>
+                <div class="features-card">
+                    <div class="icon-wrapper">
+                        <img src="public/images/svg/usb-icon.svg" alt="">
+                    </div>
+                    <div class="feature-details">
+                        <h3>USB Connecter</h3>
+                        <p>Choose from our wide range of premium cars, select the pickup and return dates.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terms and conditions -->
+        <section class="terms">
+            <div class="terms-wrapper">
+                <h2>Please Read Our Terms</h2>
+                <ul>
+                    <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                        interdum, ac aliquet odio mattis.</li>
+                    <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                        interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.</li>
+                    <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum
+                    </li>
+                    <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                        interdum, ac aliquet odio.</li>
+                    <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                        interdum, ac aliquet odio mattis. Class aptent taciti</li>
+                    <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum
+                    </li>
+                    <li>Forem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                        interdum, ac aliquet.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-wrapper">
+                <div class="footer-logo-div">
+                    <img src="public/images/svg/logo.svg" alt="">
+                    <h5>We have strategically placed our rental locations in key areas to ensure your convenience.
+                        Whether you're arriving at the airport.</h5>
+                </div>
+                <div class="footer-menu-list">
+                    <h5>Explore</h5>
+                    <ul>
+                        <li>Fleets</li>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Contact us</li>
+                        <li>Policy</li>
+                        <li>Terms</li>
+                    </ul>
+                </div>
+                <div class="footer-company-info">
+                    <p class="available-time">Daily from 9:00AM - 8:00PM</p>
+                    <h4 class="toll-no">+91 1800 203 4056</h4>
+                    <p class="email">yourmail@example.com</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <img src="public/images/svg/instagram-icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="public/images/svg/twitter-icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="public/images/svg/linkedin-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal - Product Standard -->
+    <div class="modal fade" id="standardModal" tabindex="-1" aria-labelledby="standardModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="standardModalLabel">Range Rover Vouge</h2>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-features">
+                        <ul>
+                            <li>5 People</li>
+                            <li>4 Bags</li>
+                            <li>Automatic</li>
+                            <li>Hybrid</li>
+                        </ul>
+                        <h2 class="product-price hidden mobile">₹10,285</h2>
+                    </div>
+                    <div class="product-type">
+                        <h4>Package - Standard - 8hr 80kms</h4>
+                        <h2 class="product-price">₹10,285</h2>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="mb-3 col-sm-6 col-xs-12">
+                                <div class="input_form">
+                                    <input type="text" class="form-control" placeholder="Choose date">
+                                </div>
+                            </div>
+                            <div class="mb-3 col-sm-6 col-xs-12">
+                                <div class="input_form">
+                                    <input type="text" class="form-control" placeholder="Choose time">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-sm-6 col-xs-12">
+                                <div class="input_form">
+                                    <input type="text" class="form-control" placeholder="Add Additional Km?">
+                                </div>
+                                <p class="small-info">Additional Km: <span>₹ 160</span></p>
+                            </div>
+                            <div class="mb-3 col-sm-6 col-xs-12 input_with_info">
+                                <div class="input_form">
+                                    <input type="text" class="form-control" placeholder="Add Additional hrs?">
+                                </div>
+                                <p class="small-info">Additional Hrs: <span>₹ 1,260</span></p>
+                            </div>
+                        </div>
+                    </form>
+
+                    <p class="additional-info">* Driver Batta applicable for rides between 9 pm – 6 am</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-continue">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Product Outstation -->
+    <div class="modal fade" id="outStationModal" tabindex="-1" aria-labelledby="outStationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="outStationModalLabel">Range Rover Vouge</h2>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-features">
+                        <ul>
+                            <li>5 People</li>
+                            <li>4 Bags</li>
+                            <li>Automatic</li>
+                            <li>Hybrid</li>
+                        </ul>
+                        <h2 class="product-price hidden mobile">₹25,285</h2>
+                    </div>
+                    <div class="product-type">
+                        <h4>Out Station - 300 KM, 12AM - 8PM</h4>
+                        <h2 class="product-price">₹25,285</h2>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="mb-3 col-sm-6 col-xs-12">
+                                <div class="input_form">
+                                    <input type="text" class="form-control" placeholder="Choose start date">
+                                </div>
+                            </div>
+                            <div class="mb-3 col-sm-6 col-xs-12">
+                                <div class="input_form">
+                                    <input type="text" class="form-control" placeholder="Choose start time">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-sm-6 col-xs-12">
+                                <div class="input_form">
+                                    <input type="text" class="form-control" placeholder="Choose end date">
+                                </div>
+                            </div>
+                            <div class="mb-3 col-sm-6 col-xs-12">
+                                <div class="input_form">
+                                    <input type="text" class="form-control" placeholder="Choose end time">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-sm-6 col-xs-12">
+                                <div class="input_form">
+                                    <input type="text" class="form-control" placeholder="Add Additional Km?">
+                                </div>
+                                <p class="small-info">Additional Km: <span>₹ 160</span></p>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <p class="additional-info">* Driver Batta applicable for rides between 9 pm – 6 am</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-continue">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Product Airport -->
+    <div class="modal fade" id="airportModal" tabindex="-1" aria-labelledby="airportModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="airportModalLabel">Range Rover Vouge</h2>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-features">
+                        <ul>
+                            <li>5 People</li>
+                            <li>4 Bags</li>
+                            <li>Automatic</li>
+                            <li>Hybrid</li>
+                        </ul>
+                        <h2 class="product-price hidden mobile">₹11,785</h2>
+                    </div>
+                    <div class="product-type">
+                        <h4>Airport Pickup / Drop</h4>
+                        <h2 class="product-price">₹11,785</h2>
+                    </div>
+                    <form>
+                        <div class="row mb-10">
+                            <div class="mb-3 col-sm-6 col-xs-12">
+                                <div class="input_form">
+                                    <input type="text" class="form-control" placeholder="Choose date">
+                                </div>
+                            </div>
+                            <div class="mb-3 col-sm-6 col-xs-12">
+                                <div class="input_form">
+                                    <input type="text" class="form-control" placeholder="Choose time">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-10">
+                            <label class="radio-group-label">Select type of transfer</label>
+                            <div class="flex_form">
+                                <div class="inline_edit">
+                                    <div class="input_form" style="min-height: 40px;">
+                                        <div class="form-group d-flex gap_20 mb-0">
+                                            <label for="opt11" class="radio app_radio flex">
+                                                <input type="radio" name="rdo" id="opt11" class="hidden">
+                                                <span class="label"></span>
+                                                <span class="label_txt">Airport Pickup</span>
+                                            </label>
+                                            <label for="opt22" class="radio app_radio flex">
+                                                <input type="radio" name="rdo" id="opt22" class="hidden">
+                                                <span class="label"></span>
+                                                <span class="label_txt">Airport Drop</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="radio-group-label">Select Airport</label>
+                            <div class="flex_form">
+                                <div class="inline_edit">
+                                    <div class="input_form" style="min-height: 40px;">
+                                        <div class="form-group d-flex gap_20 mb-0">
+                                            <label for="opt33" class="radio app_radio flex">
+                                                <input type="radio" name="rdo2" id="opt33" class="hidden">
+                                                <span class="label"></span>
+                                                <span class="label_txt">Kempegowda International</span>
+                                            </label>
+                                            <label for="opt44" class="radio app_radio flex">
+                                                <input type="radio" name="rdo2" id="opt44" class="hidden">
+                                                <span class="label"></span>
+                                                <span class="label_txt">HAL</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <p class="additional-info">* Driver Batta applicable for rides between 9 pm – 6 am</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-continue">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+</html>
