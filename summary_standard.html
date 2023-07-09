@@ -13,7 +13,7 @@
 <body>
     <div class="body-container">
         <section class="main">
-            <div class="main-wrapper">
+            <div class="nav-wrapper">
                 <div class="mt-5 mb-5">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid ps-4 pe-4 nav-container">
@@ -21,26 +21,33 @@
                                 <a class="navbar-brand" href="index.html">
                                     <img src="public/images/svg/logo.svg" class="image-fluid" alt="logo">
                                 </a>
-                                <div class="dropdown">
-                                    <button class="btn btn-outline-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="public/images/svg/location-icon.svg" alt="">
-                                        Bangalore
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                <div class="select-dropdown" id="location-select">
+                                    <select>
+                                        <option value="Option 1">Bangalore</option>
+                                        <option value="Option 2">Mumbai</option>
+                                        <option value="Option 3">Delhi</option>
+                                    </select>
                                 </div>
                             </div>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span><img src="public/images/svg/navbar-toggle-icon.svg" alt=""></span>
-                            </button>
+                            <div class="d-flex gap_20">
+                                <a href="#" tabindex="-1" class="btn-continue pe-3 ps-3 nav-link" id="unlisted-login"
+                                    role="button">Login/Signup</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span><img src="public/images/svg/navbar-toggle-icon.svg" alt=""></span>
+                                </button>
+                            </div>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+                                <div class="select-dropdown" id="listed-location-select">
+                                    <select>
+                                        <option value="Option 1">Bangalore</option>
+                                        <option value="Option 2">Mumbai</option>
+                                        <option value="Option 3">Delhi</option>
+                                    </select>
+                                </div>
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
                                     <li class="nav-item">
                                         <a class="nav-link text-dark" href="#">About</a>
                                     </li>
@@ -56,7 +63,7 @@
                                         <a class="nav-link text-dark" href="#" tabindex="-1"
                                             aria-disabled="true">Contact</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item" id="listed-login">
                                         <a href="#" tabindex="-1" class="btn-continue pe-3 ps-3 nav-link"
                                             role="button">Login/Signup</a>
                                     </li>
@@ -72,7 +79,8 @@
                             <h1>Summary</h1>
                             <p class="small-info mt-0 text-dark">Your booking details</p>
                             <div class="product-n-details d-flex">
-                                <img src="./public/images/svg/RangeRover.svg" class="image-fluid col-sm-6 col-5" alt="Range Rover Vogue">
+                                <img src="./public/images/svg/RangeRover.svg" class="image-fluid col-sm-6 col-5"
+                                    alt="Range Rover Vogue">
                                 <div class="product-data col-sm-6 col-xs-12">
                                     <h3>Range Rover Vouge</h3>
                                     <h5>29 Jun 2023 <div class="dot"></div>12:00 PM</h5>
@@ -112,15 +120,18 @@
                                 <div class="row">
                                     <div class="mb-3 col-12">
                                         <div class="input_form">
-                                            <input type="text" class="form-control" placeholder="Drop Off Address (Optional)">
+                                            <input type="text" class="form-control"
+                                                placeholder="Drop Off Address (Optional)">
                                         </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
                         <ul class="ms-4 mt-4 text-muted">
-                            <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</li>
-                            <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum</li>
+                            <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                                interdum, ac aliquet odio mattis.</li>
+                            <li>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                                interdum</li>
                         </ul>
                     </div>
                     <div class="price-breakup col-12 col-lg-4">

@@ -59,17 +59,65 @@ ul {
     min-height: 80vh;
 }
 
-.main .main-wrapper {
+.main .nav-wrapper {
     padding: 0 7rem;
 }
 
-.main .navbar .dropdown-toggle::after {
-    opacity: 0;
-    visibility: hidden;
+.select-dropdown,
+.select-dropdown * {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.select-dropdown {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.select-dropdown select {
+    font-size: 1rem;
+    font-weight: 500;
+    max-width: 100%;
+    padding: 5px 24px 5px 10px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    color: var(--primary-color);
+    border: none;
+    margin-left: 2rem;
+}
+
+.select-dropdown select option {
+    margin-left: 5rem;
+}
+
+.select-dropdown::before {
+    content: url(/public/images/svg/location-icon.svg);
+    position: absolute;
+    top: 20%;
+    left: 8px;
+    width: 10px;
+    height: 10px;
+    margin-top: -2px;
 }
 
 .navbar .navbar-brand img {
     max-width: 4rem;
+}
+
+#listed-location-select {
+    display: none !important;
+}
+
+#unlisted-login {
+    display: none !important;
 }
 
 .navbar-collapse .navbar-nav {
@@ -543,7 +591,7 @@ footer .footer-wrapper {
     }
 
     footer,
-    .main .main-wrapper {
+    .main .nav-wrapper {
         padding: 0 3rem;
     }
 
@@ -556,9 +604,17 @@ footer .footer-wrapper {
     .nav-link {
         display: inline !important;
     }
-    
+
     .nav-link.btn-continue {
         width: auto !important;
+    }
+
+    #unlisted-login {
+        display: block !important;
+    }
+
+    #listed-login {
+        display: none;
     }
 }
 
@@ -673,7 +729,7 @@ footer .footer-wrapper {
         font-size: 14px;
     }
 
-    .product-n-details .product-data h5 span{
+    .product-n-details .product-data h5 span {
         font-size: 12px;
     }
 
@@ -688,6 +744,14 @@ footer .footer-wrapper {
     .navbar .nav-container {
         padding: 0 !important;
     }
+
+    #unlisted-login {
+        display: none !important;
+    }
+
+    #listed-login {
+        display: block !important;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -696,6 +760,15 @@ footer .footer-wrapper {
         flex-direction: column;
         justify-content: center;
         align-items: normal;
+    }
+
+    #location-select {
+        display: none !important;
+    }
+
+    #listed-location-select {
+        display: inline-block !important;
+        margin: 1rem 0;
     }
 }
 
