@@ -603,7 +603,7 @@ footer .footer-wrapper {
 
     footer,
     .main .nav-wrapper {
-        padding: 0 3rem;
+        padding: 0 1.5rem;
     }
 
     .footer-wrapper .footer-company-info {
@@ -751,10 +751,6 @@ footer .footer-wrapper {
     .navbar .dropdown>.btn {
         font-size: .8rem !important;
     }
-
-    /* .navbar .nav-container {
-        padding: 0 !important;
-    } */
 
     #unlisted-login {
         display: none !important;
