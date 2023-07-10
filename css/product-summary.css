@@ -63,6 +63,11 @@ ul {
     padding: 0 7rem;
 }
 
+.nav-wrapper .navbar {
+    box-shadow: 0px 0px 5px #999 !important;
+    border-radius: 10px;
+}
+
 .select-dropdown,
 .select-dropdown * {
     margin: 0;
