@@ -63,7 +63,7 @@ ul {
     padding: 0 7rem;
 }
 
-.nav-wrapper .navbar {
+.main .nav-wrapper .navbar {
     box-shadow: 0px 0px 5px 2px #399DD81F !important;
     border-radius: 10px;
 }
@@ -127,6 +127,12 @@ ul {
 
 .navbar-collapse .navbar-nav {
     gap: 2rem;
+}
+
+.main .banner-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }
 
 .features {
@@ -579,7 +585,7 @@ footer .footer-wrapper {
     }
 
     .navbar-brand-items {
-        gap: 2rem !important;
+        gap: .5rem !important;
     }
 }
 
@@ -605,7 +611,7 @@ footer .footer-wrapper {
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .nav-link {
         display: inline !important;
     }
@@ -746,9 +752,9 @@ footer .footer-wrapper {
         font-size: .8rem !important;
     }
 
-    .navbar .nav-container {
+    /* .navbar .nav-container {
         padding: 0 !important;
-    }
+    } */
 
     #unlisted-login {
         display: none !important;
